@@ -1,25 +1,44 @@
-<div class="row">
-  <div class="col s12 m6">
-    <div class="card darken-1">
-      <div class="card-content black-text">
-        <span class="card-title center">Login</span>
-        <form class="col s12" [formGroup]="formLogin">
-          <div class="row">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SiscotiClient</title>
+  <base href="/">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row siscoti_bottomRow">
+      <div class="col s6 m6 l5 siscoti_BackgroundHome">
+        <img src="assets\img\imgHome.png" alt="" class="responsive-img siscoti_marginTopImg">
+      </div>
+      <div class="col s6 m6 l6">
+        <div class="row siscoti_login_padding">
+          <div class="col s12 m12">
+            <div class="card darken-1">
+              <div class="card-content black-text">
+                <span class="card-title center">Login</span>
+                <form class="col s12" [formGroup]="formLogin">
+                  <div class="row">
 
-            <div class="input-field col s12">
-              <input id="email" formControlName="email" type="email" class="validate">
-              <label for="last_name">Email</label>
-            </div>
-            <div class="input-field col s12">
-              <input id="password" formControlName="password" type="password" class="validate">
-              <label for="last_name">Password</label>
+                    <div class="input-field col s12">
+                      <input id="email" formControlName="email" type="email" class="validate">
+                      <label for="last_name">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="password" formControlName="password" type="password" class="validate">
+                      <label for="last_name">Password</label>
+                    </div>
+                  </div>
+                  <button (click)="login()" class="btn waves-effect waves-light" name="submit">Submit
+                 </button>
+                </form>
+                //
+              </div>
             </div>
           </div>
-          <button (click)="login()" class="btn waves-effect waves-light" name="submit">Submit
-         </button>
-        </form>
-        //
+        </div>
       </div>
     </div>
   </div>
-</div>
+</body>
+</html>
